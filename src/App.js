@@ -1,11 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import Particles from 'react-particles-js';
 import './App.css';
+
+const particleOpt = {
+  particles: {
+    number: {
+      value: 900,
+      density: {
+        enable: true,
+        value_area: 10000
+      }
+    }
+  }
+}
+
 
 function App() {
   return (
     <div className="App">
-      <h1>React Apppefwefwefwef</h1>
+      <Particles params={particleOpt} />
+      <h1> Background Testing --LIVE</h1>
+      <Particles params={particleOpt} />
     </div>
   );
 }
