@@ -7,7 +7,10 @@ const NavContainer = Styled.div`
 `
 const NavItemContainer = Styled.div`
     @media (max-width: 991px){
-        margin: 0 0 0 70%; 
+        margin: 0 0% 0 70%; 
+    }
+    @media (min-width: 992px){
+        margin: 0 0 0 36%;
     }
 `
 const StyledName = Styled.a`
