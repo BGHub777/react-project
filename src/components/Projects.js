@@ -1,32 +1,63 @@
 import React from 'react';
 import ProjectsCarousel from './ProjectsCarousel';
 import Styled from 'styled-components';
+import { Switch,
+    Route,
+} from "react-router-dom";
 
-const StyledH2 = Styled.h2`
-color: black;
-margin: 2% 0 2% 0;
-`
-const StyledH3 = Styled.h3`
-margin: 2% 0 0 0%;
-display: flex;
-justify-content: center;
-`
 const Container = Styled.div`
-margin: 0 20% 0 20%;
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+margin: 2% 0 0 0;
 `
 const StyledButton = Styled.button`
 border-radius: 5px;
 background: none;
 margin: 5% 0 2% 0;
 `
+const CarouselHeading = Styled.div`
+display: flex;
+justify-content: space-between;
+margin: 0 15% 2% 15%;
+@media (max-width: 600px){
+    flex-direction: column;
+    align-items: center;
+}
+`
+const StyledAnchor = Styled.a`
+text-decoration: none;
+color: black;
+font-weight: bold;
+`
+const CarouselContainer = Styled.div`
+display: flex;
+justify-content: center;
+width: 100%;
+`
+const StyledHr = Styled.hr`
+margin: 1% 15% 1.25% 15%;
+`
+const StyledSpan = Styled.span`
+position: relative;
+top: 5px;
+`
 
 const Projects = () => {
     return (
         <Container>
-            <StyledH2>Click to Learn More</StyledH2>
+
+            <CarouselHeading>
+            <h4>Projects</h4>
+            <StyledSpan>Click <StyledAnchor href="/projects-cards">here</StyledAnchor> to view the Card Display</StyledSpan>
+            </CarouselHeading>
+            <StyledHr></StyledHr>
+
+            <CarouselContainer>
             <ProjectsCarousel />
-            <StyledH3>Not the Carousel-type?</StyledH3>
-            <StyledButton>Click Here!</StyledButton>
+            </CarouselContainer>
+
         </Container>
     )
 }
