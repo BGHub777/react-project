@@ -3,6 +3,7 @@ import ProjectsCarousel from './ProjectsCarousel';
 import Styled from 'styled-components';
 import { Switch,
     Route,
+    Link
 } from "react-router-dom";
 
 const Container = Styled.div`
@@ -49,9 +50,11 @@ const Projects = () => {
         <Container>
 
             <CarouselHeading>
+
             <h4>Projects</h4>
-            <StyledSpan>Click <StyledAnchor href="/projects-cards">here</StyledAnchor> to view the Card Display</StyledSpan>
+            <StyledSpan>Click <Link to="/projects/cards">here</Link> to view the Card Display</StyledSpan>
             </CarouselHeading>
+
             <StyledHr></StyledHr>
 
             <CarouselContainer>
@@ -59,7 +62,7 @@ const Projects = () => {
             </CarouselContainer>
 
         </Container>
-    )
+            )
 }
 
 export default Projects
