@@ -51,6 +51,8 @@ const ContactForm = () => {
     const onSubmit = (data, e) => {
         console.log("data :", data);
         e.target.reset();
+        document.querySelector(StyledForm)
+        alert("Form has been Successfully Submitted --Thank you!")
     }
 
     const changeHandler = elem => {
@@ -79,7 +81,7 @@ const ContactForm = () => {
             </StyledSelect>
 
             <StyledTextBoxLabel>Questions or Comments: </StyledTextBoxLabel>
-            <StyledTextBoxInput onChange={changeHandler} type="text" name="additional" ref={register({required: true})} />
+            <StyledTextBoxInput onChange={changeHandler} type="text" name="additional" ref={register} />
 
     <StyledSubmit type="submit" />
     </StyledForm>

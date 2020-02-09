@@ -50,7 +50,7 @@ const Projects = () => {
 
             <CarouselHeading>
             <h4>Projects</h4>
-            <StyledSpan>Click <StyledAnchor href="/React-Portfolio/projects-cards">here</StyledAnchor> to view the Card Display</StyledSpan>
+            <StyledSpan>Click <StyledAnchor href="/projects-cards">here</StyledAnchor> to view the Card Display</StyledSpan>
             </CarouselHeading>
             <StyledHr></StyledHr>
 
