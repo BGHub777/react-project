@@ -1,6 +1,8 @@
 import React from 'react';
 import Particles from 'react-particles-js';
 import './App.css';
+import NavBar from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const particleOpt = {
   particles: {
@@ -13,14 +15,14 @@ const particleOpt = {
     }
   }
 }
-
+/* <Particles params={particleOpt} />
+      // <Particles params={particleOpt} /> */
 
 function App() {
   return (
     <div className="App">
-      <Particles params={particleOpt} />
-      <h1> Background Testing --LIVE</h1>
-      <Particles params={particleOpt} />
+    <NavBar />
+    <Particles params={particleOpt} />
     </div>
   );
 }
