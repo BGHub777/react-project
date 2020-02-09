@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import Styled from 'styled-components';
 import { Link } from "react-router-dom";
 
-const NavContainer = Styled.div`
-    display: flex;
-    flex-direction: column;
-`
 const NavItemContainer = Styled.div`
     @media (max-width: 991px){
         margin: 0 0% 0 70%; 
@@ -13,9 +9,36 @@ const NavItemContainer = Styled.div`
     @media (min-width: 992px){
         margin: 0 0 0 36%;
     }
-`
-const StyledName = Styled.a`
-
+    @media (min-width: 1200px){
+        margin: 0 0 0 40%;
+    }
+    @media (min-width: 1300px){
+        margin: 0 0 0 44%;
+    }
+    @media (min-width: 1400px){
+        margin: 0 0 0 48%;
+    }
+    @media (min-width: 1500px){
+        margin: 0 0 0 52%;
+    }
+    @media (min-width: 1600px){
+        margin: 0 0 0 56%;
+    }
+    @media (min-width: 1700px){
+        margin: 0 0 0 60%;
+    }
+    @media (min-width: 1800px){
+        margin: 0 0 0 64%;
+    }
+    @media (min-width: 1900px){
+        margin: 0 0 0 68%;
+    }
+    @media (min-width: 2000px){
+        margin: 0 0 0 69%;
+    }
+    @media (min-width: 2100px){
+        margin: 0 0 0 70%;
+    }
 `
 
 
