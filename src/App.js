@@ -3,11 +3,12 @@ import Particles from 'react-particles-js';
 import './App.css';
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Projects from './components/Projects'
 
 const particleOpt = {
   particles: {
     number: {
-      value: 900,
+      value: 450,
       density: {
         enable: true,
         value_area: 10000
@@ -22,6 +23,8 @@ function App() {
   return (
     <div className="App">
     <NavBar />
+    <Particles params={particleOpt} />
+    <Projects />
     <Particles params={particleOpt} />
     </div>
   );
