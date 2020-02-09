@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import Styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const CardsContainer = Styled.div`
 margin: 2% 15% 1% 15%;
@@ -38,7 +39,7 @@ const ProjectsCards = (props) => {
     <CardsContainer>
         <CardsHeading>
         <h4>Projects</h4>
-        <StyledSpan>Click <StyledAnchor href="/projects">here</StyledAnchor> to view the Carousel Display</StyledSpan>
+        <StyledSpan>Click <Link to="/projects">here</Link> to view the Carousel Display</StyledSpan>
         </CardsHeading>
         <StyledHeadingHr></StyledHeadingHr>
     <Row>
