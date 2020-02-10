@@ -70,23 +70,36 @@ const ContactForm = () => {
         <StyledForm onSubmit={handleSubmit(onSubmit)}>
             
             <label>Your Name: </label>
-            <StyledInput onChange={changeHandler} type="text" placeholder="Full Name..." name="name" ref={register({required: true})} />
-            
+            <StyledInput onChange={changeHandler} type="text" placeholder="Full Name..." name="name" ref={register({required: true, minLength: 3})} />
+            {errors.name && errors.name.type === "required" && (<p className="starterPs">
+                This field is required.</p>)}
+            {errors.name && errors.name.type === "minLength" && (<p className="starterPs">
+            This field requires a minimum length of 3 characters.</p>)}
+
             <label>Company Name: </label>
-            <StyledInput onChange={changeHandler} type="text" placeholder="Company..." name="company" ref={register({required: true})} />
-            
+            <StyledInput onChange={changeHandler} type="text" placeholder="Company..." name="company" ref={register({required: true, minLength: 2})} />
+            {errors.company && errors.company.type === "required" && (<p className="starterPs">
+                This field is required.</p>)}
+            {errors.company && errors.company.type === "minLength" && (<p className="starterPs">
+            This field requires a minimum length of 3 characters.</p>)}
+
             <label>Your Email / Phone # </label>
-            <StyledInput onChange={changeHandler} type="text" placeholder="Email or Phone Number..." name="email_or_phone_#" ref={register({required: true})} />
-            
+            <StyledInput onChange={changeHandler} type="text" placeholder="Email or Phone Number..." name="emailphone" ref={register({required: true, minLength: 10})} />
+            {errors.emailphone && errors.emailphone.type === "required" && (<p className="starterPs">
+                This field is required.</p>)}
+            {errors.emailphone && errors.emailphone.type === "minLength" && (<p className="starterPs">
+            This field requires a minimum length of 10 characters.</p>)}
+
             <label>Additional Info: </label>
             <StyledSelect name="information" ref={register}>
+                <option value="recruiter">Choose applicable (optional)</option>
                 <option value="recruiter">I'm a Recruiter</option>
                 <option value="freelance"> I'm interested in a freelance project</option>
                 <option value=" other"> Other</option>
             </StyledSelect>
 
             <StyledTextBoxLabel>Questions or Comments: </StyledTextBoxLabel>
-            <StyledTextBoxInput onChange={changeHandler} type="text" name="additional" ref={register} />
+            <StyledTextBoxInput onChange={changeHandler} type="text" name="additional" placeholder="" ref={register} />
 
     <StyledSubmit type="submit" />
     </StyledForm>

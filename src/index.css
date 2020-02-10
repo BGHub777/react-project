@@ -22,3 +22,8 @@ canvas {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.starterPs {
+  color: red;
+  position: relative;
+  bottom: 10px;
+}

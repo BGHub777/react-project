@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ContactForm from './ContactForm'
 import Styled from 'styled-components';
+import { Fade } from 'reactstrap';
 
 const ContactContainer = Styled.div`
 display: flex;
@@ -12,20 +13,20 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin: 2% 0 3% 0;
+margin: 2% 0 1.5% 0;
 `
 const ContactFormContainer = Styled.div`
 `
 
-const toggleEmail = () => {
-    let elemTest = document.getElementById("hidden-email")
+// const toggleEmail = () => {
+//     let elemTest = document.getElementById("hidden-email")
 
-    if (toggleEmail){
-    elemTest.classList.remove("hidden-email")}
-    else {
-    elemTest.classList.add("hidden-email")
-    }
-}
+//     if (toggleEmail){
+//     elemTest.classList.remove("hidden-email")}
+//     else {
+//     elemTest.classList.add("hidden-email")
+//     }
+// }
 
 const StyledButton = Styled.button`
 border: none;
@@ -36,16 +37,20 @@ background: none;
 }
 `
 
-const Contact = () => {
+const Contact = props => {
 
-    
+    const [fadeIn, setFadeIn] = useState(false);
+
+    const toggle = () => setFadeIn(!fadeIn);
 
     return (
 <ContactContainer>   
     <ContactHeaderContainer>
         <h2>Contact</h2>
-        <p>Or<StyledButton onClick={toggleEmail}>click here</StyledButton>for my personal email</p>
-        <p className="hidden-email" id="hidden-email">Brandon.fulmer@outlook.com</p>
+        <p>Or<StyledButton onClick={toggle}>click here</StyledButton>for my personal email</p>
+        <Fade in={fadeIn} tag="h5" className="mt-3">
+            Brandon.fulmer@outlook.com
+        </Fade>
     </ContactHeaderContainer>
     
     <ContactFormContainer>
