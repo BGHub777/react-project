@@ -13,17 +13,21 @@ flex-direction: column;
 const StyledInput = Styled.input`
 margin: 0% 0 3% 0;
 width: 100%;
+border-radius: 5px;
 `
 const StyledTextBoxInput = Styled.input`
 margin: 0% 0 25% 0;
 width: 100%;
 height: 100px;
+border-radius: 5px;
 `
 const StyledTextBoxLabel = Styled.label`
 margin: 2% 0 2% 0;
 `
 const StyledSubmit = Styled.input`
-margin: 0% 0 3% 0;
+margin: 0% 0 0% 0;
+position: relative;
+bottom: 25px;
 width: 100%;
 border-radius: 5px;
 opacity: .9;
@@ -34,6 +38,7 @@ opacity: .9;
 const StyledSelect = Styled.select`
 margin: 0% 0 0% 0;
 width: 100%;
+border-radius: 5px;
 `
 
 

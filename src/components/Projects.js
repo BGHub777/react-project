@@ -43,7 +43,9 @@ margin: 1% 15% 1.25% 15%;
 const StyledSpan = Styled.span`
 position: relative;
 top: 5px;
+text-decoration: none;
 `
+
 
 const Projects = () => {
     return (
@@ -52,7 +54,7 @@ const Projects = () => {
             <CarouselHeading>
 
             <h4>Projects</h4>
-            <StyledSpan>Click <Link to="/projects/cards">here</Link> to view the Card Display</StyledSpan>
+            <StyledSpan>Click <Link to="/projects/cards"> here</Link> to view the Card Display</StyledSpan>
             </CarouselHeading>
 
             <StyledHr></StyledHr>

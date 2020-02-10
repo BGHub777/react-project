@@ -1,11 +1,11 @@
 //Components
 import React from 'react';
 import ParticlesBackground from './components/ParticlesBackground';
-import NavBar from './components/NavBar';
 import Projects from './components/Projects';
 import ProjectsCards from './components/ProjectsCards';
 import About from './components/About';
 import Contact from './components/Contact';
+import NewNav from './components/NewNav';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,7 +20,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
   return (
     <Router>
-      <NavBar />
+      <NewNav />
         <Switch>
         <Route exact path="/" component={ParticlesBackground}/>
         <Route path="/about" component={About}/>
