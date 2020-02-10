@@ -4,7 +4,7 @@ import Particles from 'react-particles-js';
 const particleOpt = {
   particles: {
     number: {
-      value: 650,
+      value: 750,
       density: {
         enable: true,
         value_area: 10000

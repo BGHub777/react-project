@@ -10,7 +10,7 @@ const NewNav = (props) => {
   return (
     <div>
       <Navbar color="dark" dark>
-        <NavbarBrand className="mr-auto"><Link to="/" className="colorfix1">Brandon's Portfolio</Link></NavbarBrand>
+        <NavbarBrand className="mr-auto"><Link to="/" className="colorfix1" onClick={toggleNavbar}>Brandon's Portfolio</Link></NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
