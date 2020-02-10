@@ -28,13 +28,21 @@ const StyledSpan = Styled.span`
 position: relative;
 top: 5px;
 `
+const StyledHeaderSpan = Styled.span`
+color: black;
+font-weight: bold;
+text-decoration: none;
+&:hover {
+    text-decoration: underline;
+}
+`
 
 const ProjectsCards = (props) => {
   return (
     <CardsContainer>
         <CardsHeading>
         <h4>Projects</h4>
-        <StyledSpan>Click <Link to="/projects">here</Link> to view the Carousel Display</StyledSpan>
+        <StyledSpan>Click <Link to="/projects"><StyledHeaderSpan>here</StyledHeaderSpan></Link> to view the Carousel Display</StyledSpan>
         </CardsHeading>
         <StyledHeadingHr></StyledHeadingHr>
     <Row>

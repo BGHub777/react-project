@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import Styled from 'styled-components';
+
+const NavContainer = Styled.div`
+`
 
 const NewNav = (props) => {
   const [collapsed, setCollapsed] = useState(true);
@@ -8,7 +12,7 @@ const NewNav = (props) => {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div>
+    <NavContainer>
       <Navbar color="dark" dark>
         <NavbarBrand className="mr-auto"><Link to="/" className="colorfix1" onClick={toggleNavbar}>Brandon's Portfolio</Link></NavbarBrand>
         <Link to="/"><NavbarToggler onClick={toggleNavbar} className="mr-2"></NavbarToggler></Link>
@@ -26,7 +30,7 @@ const NewNav = (props) => {
           </Nav>
         </Collapse>
       </Navbar>
-    </div>
+    </NavContainer>
   );
 }
 

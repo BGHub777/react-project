@@ -28,13 +28,12 @@ const ContactFormContainer = Styled.div`
 //     }
 // }
 
-const StyledButton = Styled.button`
-border: none;
-background: none;
-&:hover {
+const StyledSpan = Styled.span`
+    cursor: pointer;
     font-weight: bold;
-    text-decoration: underline;
-}
+    &:hover {
+        font-weight: bold;
+        text-decoration: underline;
 `
 
 const Contact = props => {
@@ -47,7 +46,7 @@ const Contact = props => {
 <ContactContainer>   
     <ContactHeaderContainer>
         <h2>Contact</h2>
-        <p>Or<StyledButton onClick={toggle}>click here</StyledButton>for my personal email</p>
+        <p>Or click <StyledSpan onClick={toggle}>here</StyledSpan> for my personal email</p>
         <Fade in={fadeIn} tag="p" className="mb-5">
             Brandon.fulmer@outlook.com
         </Fade>

@@ -18,7 +18,7 @@ width: 100%;
 border-radius: 5px;
 `
 const StyledTextBoxInput = Styled.input`
-margin: 0% 0 25% 0;
+margin: 0% 0 35% 0;
 width: 100%;
 height: 100px;
 border-radius: 5px;

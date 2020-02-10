@@ -29,7 +29,14 @@ position: relative;
 top: 5px;
 text-decoration: none;
 `
-
+const StyledHeaderSpan = Styled.span`
+color: black;
+font-weight: bold;
+text-decoration: none;
+&:hover {
+    text-decoration: underline;
+}
+`
 
 const Projects = () => {
     return (
@@ -38,7 +45,7 @@ const Projects = () => {
             <CarouselHeading>
 
             <h4>Projects</h4>
-            <StyledSpan>Click <Link to="/projects/cards"> here</Link> to view the Card Display</StyledSpan>
+            <StyledSpan>Click <Link to="/projects/cards"> <StyledHeaderSpan>here</StyledHeaderSpan></Link> to view the Card Display</StyledSpan>
             </CarouselHeading>
 
             <StyledHr></StyledHr>
