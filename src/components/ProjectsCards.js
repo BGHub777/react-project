@@ -24,11 +24,6 @@ margin: 0 0 2% 0;
     align-items: center;
 }
 `
-const StyledAnchor = Styled.a`
-text-decoration: none;
-color: black;
-font-weight: bold;
-`
 const StyledSpan = Styled.span`
 position: relative;
 top: 5px;

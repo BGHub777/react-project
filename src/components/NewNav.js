@@ -11,7 +11,7 @@ const NewNav = (props) => {
     <div>
       <Navbar color="dark" dark>
         <NavbarBrand className="mr-auto"><Link to="/" className="colorfix1" onClick={toggleNavbar}>Brandon's Portfolio</Link></NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <Link to="/"><NavbarToggler onClick={toggleNavbar} className="mr-2"></NavbarToggler></Link>
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>

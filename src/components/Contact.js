@@ -13,7 +13,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin: 2% 0 1.5% 0;
+margin: 1% 0 3% 0;
 `
 const ContactFormContainer = Styled.div`
 `
@@ -48,7 +48,7 @@ const Contact = props => {
     <ContactHeaderContainer>
         <h2>Contact</h2>
         <p>Or<StyledButton onClick={toggle}>click here</StyledButton>for my personal email</p>
-        <Fade in={fadeIn} tag="h5" className="mt-3">
+        <Fade in={fadeIn} tag="p">
             Brandon.fulmer@outlook.com
         </Fade>
     </ContactHeaderContainer>

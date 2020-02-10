@@ -1,23 +1,11 @@
 import React from 'react';
 import ProjectsCarousel from './ProjectsCarousel';
 import Styled from 'styled-components';
-import { Switch,
-    Route,
-    Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Container = Styled.div`
-// display: flex;
-// flex-direction: column;
-// justify-content: center;
-// align-items: center;
 margin: 2% 0 0 0;
-`
-const StyledButton = Styled.button`
-border-radius: 5px;
-background: none;
-margin: 5% 0 2% 0;
 `
 const CarouselHeading = Styled.div`
 display: flex;
@@ -27,11 +15,6 @@ margin: 0 15% 2% 15%;
     flex-direction: column;
     align-items: center;
 }
-`
-const StyledAnchor = Styled.a`
-text-decoration: none;
-color: black;
-font-weight: bold;
 `
 const CarouselContainer = Styled.div`
 display: flex;

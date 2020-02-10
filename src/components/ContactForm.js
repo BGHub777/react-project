@@ -5,6 +5,8 @@ import Styled from 'styled-components';
 const StyledForm = Styled.form`
 display: flex;
 flex-direction: column;
+position: relative;
+bottom: 50px;
 // justify-content: center;
 // align-content: center;
 // align-items: center;
