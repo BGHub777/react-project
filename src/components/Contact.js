@@ -48,7 +48,7 @@ const Contact = props => {
     <ContactHeaderContainer>
         <h2>Contact</h2>
         <p>Or<StyledButton onClick={toggle}>click here</StyledButton>for my personal email</p>
-        <Fade in={fadeIn} tag="p">
+        <Fade in={fadeIn} tag="p" className="mb-5">
             Brandon.fulmer@outlook.com
         </Fade>
     </ContactHeaderContainer>
