@@ -19,7 +19,6 @@ margin: 0 15% 2% 15%;
 const CarouselContainer = Styled.div`
 display: flex;
 justify-content: center;
-width: 100%;
 `
 const StyledHr = Styled.hr`
 margin: 1% 15% 1.25% 15%;
@@ -44,7 +43,7 @@ const Projects = () => {
 
             <CarouselHeading>
 
-            <h4>Projects</h4>
+            <h2>Projects</h2>
             <StyledSpan>Click <Link to="/projects/cards"> <StyledHeaderSpan>here</StyledHeaderSpan></Link> to view the Card Display</StyledSpan>
             </CarouselHeading>
 

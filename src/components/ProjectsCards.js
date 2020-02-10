@@ -41,13 +41,13 @@ const ProjectsCards = (props) => {
   return (
     <CardsContainer>
         <CardsHeading>
-        <h4>Projects</h4>
+        <h2>Projects</h2>
         <StyledSpan>Click <Link to="/projects"><StyledHeaderSpan>here</StyledHeaderSpan></Link> to view the Carousel Display</StyledSpan>
         </CardsHeading>
         <StyledHeadingHr></StyledHeadingHr>
     <Row>
       <Col sm="6">
-        <Card body>
+        <Card body className="mb-1">
           <CardTitle>Project Title</CardTitle>
           <CardText>Project Description / What does the application do?</CardText>
           <Button>Link to Github Repo</Button>
@@ -56,7 +56,7 @@ const ProjectsCards = (props) => {
         </Card>
       </Col>
       <Col sm="6">
-        <Card body>
+        <Card body className="mb-1">
           <CardTitle>Project Title</CardTitle>
           <CardText>Project Description / What does the application do?</CardText>
           <Button>Link to Github Repo</Button>
@@ -68,7 +68,7 @@ const ProjectsCards = (props) => {
 
     <Row>
     <Col sm="6">
-      <Card body>
+      <Card body className="mb-1">
         <CardTitle>Project Title</CardTitle>
         <CardText>Project Description / What does the application do?</CardText>
         <Button>Link to Github Repo</Button>
@@ -77,28 +77,7 @@ const ProjectsCards = (props) => {
       </Card>
     </Col>
     <Col sm="6">
-      <Card body>
-        <CardTitle>Project Title</CardTitle>
-        <CardText>Project Description / What does the application do?</CardText>
-        <Button>Link to Github Repo</Button>
-        <StyledHr></StyledHr>
-        <Button>Link to Deployed App</Button>
-      </Card>
-    </Col>
-  </Row>
-
-  <Row>
-    <Col sm="6">
-      <Card body>
-        <CardTitle>Project Title</CardTitle>
-        <CardText>Project Description / What does the application do?</CardText>
-        <Button>Link to Github Repo</Button>
-        <StyledHr></StyledHr>
-        <Button>Link to Deployed App</Button>
-      </Card>
-    </Col>
-    <Col sm="6">
-      <Card body>
+      <Card body className="mb-1">
         <CardTitle>Project Title</CardTitle>
         <CardText>Project Description / What does the application do?</CardText>
         <Button>Link to Github Repo</Button>
@@ -111,6 +90,27 @@ const ProjectsCards = (props) => {
   <Row>
     <Col sm="6">
       <Card body>
+        <CardTitle className="mb-1">Project Title</CardTitle>
+        <CardText>Project Description / What does the application do?</CardText>
+        <Button>Link to Github Repo</Button>
+        <StyledHr></StyledHr>
+        <Button>Link to Deployed App</Button>
+      </Card>
+    </Col>
+    <Col sm="6">
+      <Card body>
+        <CardTitle className="mb-1">Project Title</CardTitle>
+        <CardText>Project Description / What does the application do?</CardText>
+        <Button>Link to Github Repo</Button>
+        <StyledHr></StyledHr>
+        <Button>Link to Deployed App</Button>
+      </Card>
+    </Col>
+  </Row>
+
+  <Row>
+    <Col sm="6">
+      <Card body className="mt-1">
         <CardTitle>Project Title</CardTitle>
         <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
         <Button>Link to Github Repo</Button>
@@ -119,7 +119,7 @@ const ProjectsCards = (props) => {
       </Card>
     </Col>
     <Col sm="6">
-      <Card body>
+      <Card body className="mt-1">
         <CardTitle>Project Title</CardTitle>
         <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
         <Button>Link to Github Repo</Button>
