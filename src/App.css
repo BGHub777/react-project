@@ -39,3 +39,10 @@
 .hidden-email {
   display: none;
 }
+.colorfix1 {
+  color: white;
+}
+.colorfix1:hover {
+  text-decoration: none;
+  color: black;
+}

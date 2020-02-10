@@ -10,18 +10,18 @@ const NewNav = (props) => {
   return (
     <div>
       <Navbar color="dark" dark>
-        <NavbarBrand href="/" className="mr-auto">Brandon's Portfolio</NavbarBrand>
+        <NavbarBrand className="mr-auto">Brandon's Portfolio</NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/about">About&nbsp;<i className="fas fa-user-circle"></i></NavLink>
+              <NavLink><Link to="/about" className="colorfix1" onClick={toggleNavbar}>About&nbsp;<i className="fas fa-user-circle"></i></Link></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/projects">Projects&nbsp;<i className="fas fa-wrench"></i></NavLink>
+              <NavLink><Link to="/projects" className="colorfix1" onClick={toggleNavbar}>Projects&nbsp;<i className="fas fa-wrench"></i></Link></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/contact">Contact&nbsp;<i className="fas fa-envelope"></i></NavLink>
+              <NavLink><Link to="/contact" className="colorfix1" onClick={toggleNavbar}>Contact&nbsp;<i className="fas fa-envelope"></i></Link></NavLink>
             </NavItem>
           </Nav>
         </Collapse>
