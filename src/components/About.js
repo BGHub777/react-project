@@ -7,9 +7,13 @@ flex-direction: column;
 align-items: center;
 width: 50%;
 margin: 0 0 0% 25%;
-@media (max-width: 800px){
+@media (max-width: 1100px){
     width: 75%;
     margin: 0 0 2% 13%;
+}
+@media (max-width: 600px){
+    width: 90%;
+    margin: 0 0 7.5% 5%;
 }
 `
 const Container2 = Styled.div`
@@ -18,17 +22,27 @@ flex-direction: column;
 align-items: center;
 width: 50%;
 margin: 0 0 7.5% 25%;
-@media (max-width: 800px){
+@media (min-width: 1100px){
+    position: relative;
+    top: 20px;
+}
+@media (max-width: 1100px){
     width: 75%;
     margin: 0 0 7.5% 13%;
+}
+@media (max-width: 600px){
+    width: 90%;
+    margin: 0 0 7.5% 5%;
+    position: relative;
+    bottom: 25px;
 }
 `
 const StyledHr = Styled.hr`
 width: 70%;
-margin: 6% 0 3% 0;
+margin: 6% 0 0% 0;
 `
 const StyledH2 = Styled.h2`
-margin: 3% 0 5% 0;
+margin: 3% 0 2% 0;
 `
 const StyledP = Styled.p`
 margin: 3% 0 1% 0;
@@ -37,9 +51,6 @@ width: 70%;
 const StyledLocation = Styled.p`
 margin: 5% 0 0% 0;
 width: 70%;
-`
-const ShortHr = Styled.hr`
-width: 40%;
 `
 const NewHr = Styled.hr`
 width: 70%;
