@@ -7,10 +7,7 @@ display: flex;
 flex-direction: column;
 position: relative;
 bottom: 50px;
-// justify-content: center;
-// align-content: center;
-// align-items: center;
-// justify-items: center;
+width: 315px;
 `
 const StyledInput = Styled.input`
 margin: 0% 0 3% 0;
