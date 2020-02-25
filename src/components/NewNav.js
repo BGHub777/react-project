@@ -12,7 +12,7 @@ const NewNav = (props) => {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <NavContainer>
+    <NavContainer style={{position: "sticky", top:"0"}}>
       <Navbar color="dark" dark>
         <NavbarBrand className="mr-auto"><Link to="/" className="colorfix1" onClick={toggleNavbar}>Brandon's Portfolio</Link></NavbarBrand>
         <Link to="/"><NavbarToggler onClick={toggleNavbar} className="mr-2"></NavbarToggler></Link>

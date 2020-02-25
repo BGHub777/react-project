@@ -78,3 +78,38 @@
   align-items: center;
   align-content: center;
 }
+.pictures10 {
+  width: 10%;
+  height: auto;
+}
+.pictures20 {
+  width: 20%;
+  height: auto;
+}
+.pictures25 {
+  width: 25%;
+  height: auto;
+}
+.pictures30 {
+  width: 30%;
+  height: auto;
+}
+.pictures333 {
+  width: 33.3333333333333%;
+  height: auto;
+}
+.pictures50 {
+  width: 50%;
+  height: auto;
+}
+.pictures70 {
+  width: 70%;
+  height: auto;
+}
+.pictures100 {
+  width: 100%;
+  height: 45rem;
+}
+.flex {
+  display: flex;
+}
