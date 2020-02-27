@@ -48,17 +48,17 @@ const ProjectsCards = (props) => {
     <Row>
       <Col sm="6">
         <Card body className="mb-1">
-          <CardTitle>Project Title</CardTitle>
-          <CardText>Project Description / What does the application do?</CardText>
-          <Button>Link to Github Repo</Button>
+          <CardTitle>Rick and Morty Fan Site</CardTitle>
+          <CardText>This App takes information from the Rick and Morty API, then displays it on the screen in cards. You can search for your favorite characters using a search bar.</CardText>
+          <Button><a target="_blank" href="https://sprint-challenge-single-page-apps-zeta.now.sh/characters">Link to Github Repo</a></Button>
           <StyledHr></StyledHr>
-          <Button>Link to Deployed App</Button>
+          <Button><a target="_blank" href="https://github.com/Nobro777/Sprint-Challenge-Single-Page-Apps">Link to Github Repo</a></Button>
         </Card>
       </Col>
       <Col sm="6">
         <Card body className="mb-1">
           <CardTitle>Project Title</CardTitle>
-          <CardText>Project Description / What does the application do?</CardText>
+          <CardText>This App takes water level information from an API and displays it as a graph as well as in various other charts, so that fishermen can easily check the tides.</CardText>
           <Button>Link to Github Repo</Button>
           <StyledHr></StyledHr>
           <Button>Link to Deployed App</Button>
