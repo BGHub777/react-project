@@ -50,9 +50,9 @@ const ProjectsCards = (props) => {
         <Card body className="mb-1">
           <CardTitle>Rick and Morty Fan Site</CardTitle>
           <CardText>This App takes information from the Rick and Morty API, then displays it on the screen in cards. You can search for your favorite characters using a search bar.</CardText>
-          <Button><a target="_blank" href="https://sprint-challenge-single-page-apps-zeta.now.sh/characters">Link to Github Repo</a></Button>
+          <Button><a href="https://github.com/Nobro777/Sprint-Challenge-Single-Page-Apps" target="_blank">Link to Github Repo</a></Button>
           <StyledHr></StyledHr>
-          <Button><a target="_blank" href="https://github.com/Nobro777/Sprint-Challenge-Single-Page-Apps">Link to Github Repo</a></Button>
+          <Button><a href="https://sprint-challenge-single-page-apps-zeta.now.sh/characters" target="_blank">Link to Deployed App</a></Button>
         </Card>
       </Col>
       <Col sm="6">
